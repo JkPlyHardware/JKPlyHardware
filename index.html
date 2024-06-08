@@ -21,7 +21,7 @@
         }
         nav {
             background-color: #333;
-            overflow: hidden;/* Ensure navigation items don't overflow */
+            overflow: hidden;
 			justify-content: center;
         }
         nav a {
@@ -30,6 +30,8 @@
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+			display: block;
+			
         }
         nav a:hover {
             background-color: #ddd;
@@ -51,6 +53,7 @@
             width: 100%;
             max-width: 300px;
             text-align: center;
+			
         }
         .product img {
             max-width: 100%;
@@ -64,30 +67,34 @@
             padding: 10px 0;
         }
 @media (min-width: 768px) {
+            nav {
+                display: flex;
+                justify-content: center;
+            }
             nav a {
-                float: none;
-                display: inline-block;
+                display: inline-block; /* Change to inline-block for horizontal layout on desktop */
+                text-align: center; /* Center-align text on larger screens */
+            }
+            .container {
+                padding-left: 0;
             }
         }
-
-@media (max-width: 767px) {
-            nav a {
-                float: none;
-                display: block;
-                width: 100%;
-                text-align: center;
+        @media (max-width: 767px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
             }
-            .product {
-                width: 90%;
+            .container {
+                margin-top: 60px; /* Adjust to the height of the nav */
+                padding: 20px;
             }
         }
-	.inline-background {
-							background-color:orange;
-							display: inline;
-}
+        .inline-background {
+            background-color: orange;
+            display: inline;
+        }
 	
-
-
 
     </style>
 </head>
@@ -98,10 +105,10 @@
 </header>
 
 <nav>
-    <a href="website.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="#website">Home</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
 </nav>
 
 <div class="container">
@@ -140,17 +147,20 @@
     </section>
 
     <section id="contact">
+	<div class="container">
         <h2 class="inline-background" style="color:blue;">Contact Us</h2>
         <p><img src="gmail.jpg" alt="WhatsApp"><font style="font-weight: bold; font-size:18px">Email:</font> jkplyhardwareandfurnitureworks@gmail.com</p>
         <p><img src="call.jpg" alt="WhatsApp"><font style="font-weight: bold; font-size:18px">Phone:</font> +91 9661382988</p>
         <p><img src="what.png" alt="WhatsApp"><font style="font-weight: bold; font-size:18px"> WhatsApp:</font> +91 9661382988</p>
         <p><font style="font-weight: bold; font-size:18px">Address:</font> Lekha Nagar, Khagual Road, near Holy Cross International School, Patna, India</p>
-    </section>
+    </div>
+	</section>
 </div>
 
 <footer>
     &copy; 2024 JK Ply Hardware and Furniture Workshop
 </footer>
+
 
 </body>
 </html>
