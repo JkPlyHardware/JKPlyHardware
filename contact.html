@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,164 +9,191 @@
 </head>
 
 <style>
+    body {
+        background-image: url('photo.jpg');
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+        animation: gradientAnimation 15s ease infinite;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 10px;
+    }
 
-			body { background-image:url('photo.jpg');
-    font-family: Arial, sans-serif;
-    background-color:#f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 10px;
-}
-
-.contact-container {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contact-container h1 {
-    margin-bottom: 20px;
-}
-
-.contact-container p {
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.contact-container .contact-details p {
-    margin-bottom: 10px;
-}
-
-.contact-container a {
-    color: #28a745;
-    text-decoration: none;
-}
-
-.contact-container a:hover {
-    text-decoration: underline;
-}
-
-.contact-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-container label {
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.contact-container input,
-.contact-container textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.contact-container button {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-container button:hover {
-    background-color: #218838;
-}
-
-@media (max-width: 600px) {
     .contact-container {
-        padding: 15px 20px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .contact-container h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .contact-container p {
-        font-size: 14px;
+        margin-bottom: 20px;
+        color: #555;
     }
 
-    .contact-container label,
-    .contact-container input,
-    .contact-container textarea,
-    .contact-container button {
-        font-size: 14px;
-    }
-
-    .contact-container button {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .contact-container {
-        padding: 10px 15px;
-    }
-
-    .contact-container h1 {
-        font-size: 20px;
+    .contact-container .contact-details p {
         margin-bottom: 10px;
     }
 
-    .contact-container p {
-        font-size: 12px;
+    .contact-container a {
+        color: #28a745;
+        text-decoration: none;
     }
 
-    .contact-container label,
+    .contact-container a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-container form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container label {
+        margin-bottom: 5px;
+        color: #333;
+    }
+
     .contact-container input,
-    .contact-container textarea,
-    .contact-container button {
-        font-size: 12px;
+    .contact-container textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
     }
 
     .contact-container button {
-        padding: 8px;
+        padding: 10px 15px;
+        background-color: #12cc6c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+
     }
-}
- h1{ background-color:lightgreen;
- 
-    
-	}
+
+    .contact-container button:hover {
+        background-color: #218838;
 
 
+    }
+
+    @media (max-width: 600px) {
+        .contact-container {
+            padding: 15px 20px;
+        }
+
+        .contact-container h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact-container p {
+            font-size: 14px;
+        }
+
+        .contact-container label,
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container button {
+            font-size: 14px;
+
+        }
+
+        .contact-container button {
+            padding: 10px;
+
+        }
+    }
+
+    @media (max-width: 400px) {
+        .contact-container {
+            padding: 10px 15px;
+        }
+
+        .contact-container h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-container p {
+            font-size: 12px;
+        }
+
+        .contact-container label,
+        .contact-container input,
+        .contact-container textarea,
+        .contact-container button {
+            font-size: 12px;
+
+        }
+
+        .contact-container button {
+            padding: 8px;
+
+        }
+    }
+
+    h1 {
+        background-color: lightgreen;
+
+    }
+
+    .contact-container p {
+        color: #c6d709;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        50% {
+            background-position: 100% 100%;
+        }
+
+        100% {
+            background-position: 0% 0%;
+        }
+    }
 </style>
 
 <body>
     <div class="contact-container">
         <h1>Our Contact details</h1>
-        <p>If you have any questions, feel free to reach out to us using the form below or through our contact details.</p>
+        <p>If you have any questions, feel free to reach out to us using the form below or through our contact details.
+        </p>
         <div class="contact-details">
-            <p><strong>Phone:</strong>  <a href="callto:+919661382988"> +91 9661382988 </a> </p>
-            <p><strong>Email:</strong> <a href="mailto:jkplyhardwareandfurnitureworks@gmail.com">jkplyhardwareandfurnitureworks@gmail.com<a></p>
+            <p><strong>Phone:</strong> <a href="callto:+919661382988"> +91 9661382988 </a> </p>
+            <p><strong>Email:</strong> <a
+                    href="mailto:jkplyhardwareandfurnitureworks@gmail.com">jkplyhardwareandfurnitureworks@gmail.com<a>
+            </p>
             <p><strong>WhatsApp:</strong> +91 9661382988</p>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key"
-            value="b12e1ce7-6772-4495-8920-dfb5996db579">
-            
+            <input type="hidden" name="access_key" value="b12e1ce7-6772-4495-8920-dfb5996db579">
+
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"  placeholder="Enter your full name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
             <label for="mobile">Mobile.No:</label>
-            <input type="phone" id="phone" name="Mobile" placeholder="Enter your Phone number"required>
-			
-			<label for="email">Email:</label>
+            <input type="phone" id="phone" name="Mobile" placeholder="Enter your Phone number" required>
+
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your Gmail id" required>
 
             <label for="message">Message:</label>
@@ -175,4 +203,5 @@
         </form>
     </div>
 </body>
+
 </html>
