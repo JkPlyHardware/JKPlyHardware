@@ -54,8 +54,8 @@ nav ul li a:hover {
 }
 
 .offer-banner {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-    color: #fff;
+    background: rgb(240, 235, 235);
+    color: rgb(12, 47, 222);
     text-align: center;
     padding: 12px;
     font-size: 18px;
