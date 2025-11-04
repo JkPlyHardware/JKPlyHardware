@@ -14,7 +14,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
-document.addEventListener("contextmenu", e => e.preventDefault()); 
+document.addEventListener("contextmenu", e => e.preventDefault());
 document.addEventListener("keydown", function (e) {
 
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
@@ -48,3 +48,16 @@ window.onscroll = function () {
 scrollBtn.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+setInterval(check, 1000);
+
+function check() {
+    if (navigator.onLine == true) {
+        document.getElementById("connect").style.display = "block";
+        document.getElementById("n_connect").style.display = "none";
+    }
+    else {
+        document.getElementById("n_connect").style.display = "block";
+        document.getElementById("connect").style.display = "none";
+    }
+}
