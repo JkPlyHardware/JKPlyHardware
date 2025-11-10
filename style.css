@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,15 @@ body {
     background: #f7f7f7;
     color: #333;
     line-height: 1.6;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    display: block;
 }
 
 header {
@@ -298,9 +309,9 @@ section h2 {
     margin: 10px 0;
 }
 
-#qrcode{
-            text-align: center;
-        }
+#qrcode {
+    text-align: center;
+}
 
 .feedback-form {
     background: #fff;
@@ -677,7 +688,8 @@ header nav ul li a:hover {
         transform: scale(1);
     }
 }
-#n_connect{
+
+#n_connect {
     color: red;
     text-align: center;
     margin-top: 270px;
